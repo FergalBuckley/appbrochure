@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+	<title>My Apps</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script>
+		$(document).on("mobileinit", function(){
+			/*
+			apply overrides here
+			example:
+			$.mobile.activeBtnClass = "my-class";
+			*/
+			$.mobile.defaultPageTransition = "slideup";
+			$.mobile.buttonMarkup.hoverDelay = 100;
+			$.mobile.pageLoadErrorMessage = "Could not load page";
+		});
+	</script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<section data-role="page" id="home">
+	<header data-role="header">
+		<h1><strong>Home-My Apps</strong></h1>
+	</header><!-- /header -->
+	<article role="main" class="ui-content">
+		<div data-role="navbar" data-direction="forward">
+		    <ul>
+		    	<li><a href="#home" class="ui-btn-active">Home</a></li>
+				<li><a href="#next">Translator</a></li>
+				<li><a href="#next2">Bluetooth Controller</a></li>
+		    </ul>
+		</div><!-- /navbar -->
+		<p></p>
+		
+		
+	</article><!-- /content -->
+	<footer data-role="footer">
+		<h4>What is this site for?</h4>
+		<p>This site is a showcase of my apps. I have only two as of now but I'm constantly working so expect consistent updates and new products. For now though, you will see my Translator app, appropriately named Translator and my Bluetooth Controller app. This apps are in a state near enough to completion that I would deem them not only useable but useful too. These are non profit apps made with the MIT App Inventor software which is a free and easy way of getting into coding and is a gentle introduction to code. For now my apps can be gotten directly from the MIT App Inventor gallery where I have published them. Hopefully you may see them on Google Play soon.</p>
+		<img src="img/t.jpg"><img src="img/bluetooth.jpg"><p>Expect to see more logos here soon ;)<br>
+		<a href="#next3" class="ui-btn" style="margin-bottom:20px" data-direction="slideup">See the whole team here.</a></p>
+		&copy; Not Copyright of any person, company or other body not even me Fergal Buckley. 
+	</footer><!-- /footer -->
+</section><!-- /page -->
+
+<section data-role="page" id="next">
+	<header data-role="header">
+		<a href="#home" data-icon="back">Home</a>
+		<h1><strong>Translator</strong></h1>
+	</header><!-- /header -->
+	<article role="main" class="ui-content">
+		<div data-role="navbar">
+		    <ul>
+		    	<li><a href="#home">Home</a></li>
+				<li><a href="#next"class="ui-btn-active">Translator</a></li>
+				<li><a href="#next2">Bluetooth Controller</a></li>
+		    </ul>
+		</div><!-- /navbar -->
+		<p>This app is extremely user frendly and very useful. With the ability to recognise and translate speech and text in over 50 languages. Not only will it hear you it will reply too. Powered by Yandex Translate, this app is fast reliable and free.</p>
+		<!-- <ul data-role="listview">
+			<li><a href="#next2">Bluetooth Controller</a></li>
+		</ul> -->
+	</article><!-- /content -->
+	<footer data-role="footer">
+		<h4>Page footer</h4>
+		<img src="img/translator.png">
+	</footer><!-- /footer -->
+</section><!-- /page -->
+
+<section data-role="page" id="next2">
+	<header data-role="header">
+		<a href="#home" data-icon="back">Home</a>
+		<h1><strong>Bluetooth Controller</strong></h1>
+	</header><!-- /header -->
+	<article role="main" class="ui-content">
+		<div data-role="navbar">
+		    <ul>
+		    	<li><a href="#home">Home</a></li>
+				<li><a href="#next">Translator</a></li>
+				<li><a href="#next2"class="ui-btn-active">Bluetooth Controller</a></li>
+		    </ul>
+		</div><!-- /navbar -->
+		<p></p>
+		<!-- <ul data-role="listview">
+			<li><a href="#next">Translator</a></li>
+		</ul> -->
+	</article><!-- /content -->
+	<footer data-role="footer">
+		<h4>Page footer</h4>
+	</footer><!-- /footer -->
+</section><!-- /page -->
+
+<section data-role="page" id="next3">
+	<header data-role="header">
+		<a href="#home" data-icon="back">Home</a>
+		<h1><strong>Bluetooth Controller</strong></h1>
+	</header><!-- /header -->
+	<article role="main" class="ui-content">
+		<div data-role="navbar">
+		    <ul>
+		    	<li><a href="#home">Home</a></li>
+				<li><a href="#next">Translator</a></li>
+				<li><a href="#next2">Bluetooth Controller</a></li>
+		    </ul>
+		</div><!-- /navbar -->
+			<p>Ideas by:Fergal Buckley<br>
+				Programming by:Fergal Buckley<br>
+				Web design by :Fergal Buckley
+			</p>
+		<!-- <ul data-role="listview">
+			<li><a href="#next">Translator</a></li>
+		</ul> -->
+	</article><!-- /content -->
+	
+	
+</section><!-- /page -->
+
+</body>
+</html>
